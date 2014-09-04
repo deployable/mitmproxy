@@ -931,6 +931,8 @@ class ConsoleMaster(flow.FlowMaster):
                                     self.stickyauth_txt,
                                     self.set_stickyauth
                                 )
+                            elif k == "E":
+                                raise("Manual test Exception")
                 self.looptime = time.time() - startloop
         except (Stop, KeyboardInterrupt):
             pass
